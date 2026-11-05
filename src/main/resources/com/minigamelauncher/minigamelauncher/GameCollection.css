@@ -1,0 +1,25 @@
+.back-btn {
+    opacity: 0.1;
+}
+
+.back-btn:hover {
+    opacity: 1.0;
+}
+
+.game-grid {
+    -fx-background-image: url("Game_Collection_Bottom.png");
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+}
+
+.game-card {
+    -fx-effect: none;
+    -fx-cursor: hand;
+    -fx-transition: all 0.3s;
+}
+
+.game-card:hover {
+    -fx-effect: dropshadow(gaussian, #00aaff, 15, 0.1, 0, 0);
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}

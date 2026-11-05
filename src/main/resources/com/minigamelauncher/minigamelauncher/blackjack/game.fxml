@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1500.0" style="-fx-border-color: #966F33; -fx-border-width: 10; -fx-background-color: #855E42;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.minigamelauncher.blackjack.BlackjackController">
+   <children>
+      <ImageView fitHeight="800.0" fitWidth="1500.0" layoutX="-1.0" pickOnBounds="true">
+         <image>
+            <Image url="@Table4.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutY="10.0" prefHeight="780.0" prefWidth="1200.0" style="-fx-background-color: green;" AnchorPane.bottomAnchor="10.799999999999955" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <ImageView fitHeight="780.0" fitWidth="1200.0" pickOnBounds="true" preserveRatio="true" scaleY="1.1" AnchorPane.bottomAnchor="34.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="35.0">
+               <image>
+                  <Image url="@table.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="pCard1" fitHeight="200.0" fitWidth="137.0" layoutX="14.0" layoutY="544.0">
+               <image>
+                  <Image url="@placeholder.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="bCard8" fitHeight="200.0" fitWidth="137.0" layoutX="1043.0" layoutY="14.0">
+               <image>
+                  <Image url="@placeholder.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="200.0" fitWidth="137.0" layoutX="602.0" layoutY="279.0">
+               <image>
+                  <Image url="@Card_Back.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="200.0" fitWidth="137.0" layoutX="455.0" layoutY="279.0">
+               <image>
+                  <Image url="@Card_Back.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="pCard2" fitHeight="200.0" fitWidth="137.0" layoutX="161.0" layoutY="544.0">
+               <image>
+                  <Image url="@placeholder.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="pCard3" fitHeight="200.0" fitWidth="137.0" layoutX="308.0" layoutY="544.0">
+               <image>
+                  <Image url="@placeholder.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="pCard4" fitHeight="200.0" fitWidth="137.0" layoutX="455.0" layoutY="544.0">
+               <image>
+                  <Image url="@placeholder.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="pCard5" fitHeight="200.0" fitWidth="137.0" layoutX="602.0" layoutY="544.0">
+               <image>
+                  <Image url="@placeholder.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="pCard6" fitHeight="200.0" fitWidth="137.0" layoutX="749.0" layoutY="544.0">
+               <image>
+                  <Image url="@placeholder.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="pCard7" fitHeight="200.0" fitWidth="137.0" layoutX="896.0" layoutY="544.0">
+               <image>
+                  <Image url="@placeholder.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="pCard8" fitHeight="200.0" fitWidth="137.0" layoutX="1043.0" layoutY="544.0">
+               <image>
+                  <Image url="@placeholder.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="bCard1" fitHeight="200.0" fitWidth="137.0" layoutX="14.0" layoutY="14.0">
+               <image>
+                  <Image url="@placeholder.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="bCard2" fitHeight="200.0" fitWidth="137.0" layoutX="161.0" layoutY="14.0">
+               <image>
+                  <Image url="@placeholder.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="bCard3" fitHeight="200.0" fitWidth="137.0" layoutX="308.0" layoutY="14.0">
+               <image>
+                  <Image url="@placeholder.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="bCard4" fitHeight="200.0" fitWidth="137.0" layoutX="455.0" layoutY="14.0">
+               <image>
+                  <Image url="@placeholder.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="bCard5" fitHeight="200.0" fitWidth="137.0" layoutX="603.0" layoutY="14.0">
+               <image>
+                  <Image url="@placeholder.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="bCard6" fitHeight="200.0" fitWidth="137.0" layoutX="749.0" layoutY="14.0">
+               <image>
+                  <Image url="@placeholder.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="bCard7" fitHeight="200.0" fitWidth="137.0" layoutX="896.0" layoutY="14.0">
+               <image>
+                  <Image url="@placeholder.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Label fx:id="lblScore" layoutX="1335.0" layoutY="376.0" prefHeight="19.0" prefWidth="56.0" scaleX="2.0" scaleY="2.0" style="-fx-background-color: black; -fx-border-color: #ffb400;" text="Score:" textFill="#ffb400" />
+      <ImageView fx:id="pGun" fitHeight="200.0" fitWidth="388.0" layoutX="1161.0" layoutY="596.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@chamber6.png" />
+         </image></ImageView>
+      <Button fx:id="btnHit" layoutX="1314.0" layoutY="420.0" mnemonicParsing="false" onAction="#hit" scaleX="1.25" scaleY="1.25" style="-fx-background-color: black; -fx-border-color: #ffb400;" text="Hit " textFill="#ffb400" />
+      <Button fx:id="btnStay" layoutX="1374.0" layoutY="420.0" mnemonicParsing="false" onAction="#stay" scaleX="1.25" scaleY="1.25" style="-fx-background-color: black; -fx-border-color: #ffb400;" text="Stay" textFill="#ffb400" />
+      <Label fx:id="lblBotScore" layoutX="1336.0" layoutY="328.0" prefHeight="19.0" prefWidth="56.0" scaleX="2.0" scaleY="2.0" style="-fx-background-color: black; -fx-border-color: #ffb400;" text="Score: " textFill="#ffb400" />
+      <ImageView fx:id="bGun" fitHeight="200.0" fitWidth="388.0" layoutX="1161.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@chamber6.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnBShoot" alignment="CENTER" disable="true" layoutX="1329.0" layoutY="200.0" mnemonicParsing="false" onAction="#bShoot" scaleX="1.25" scaleY="1.25" style="-fx-background-color: black; -fx-border-color: #ffb400;" text="Shoot" textFill="#ffb400" />
+      <Button fx:id="btnPShoot" alignment="CENTER" disable="true" layoutX="1329.0" layoutY="567.0" mnemonicParsing="false" onAction="#pShoot" scaleX="1.25" scaleY="1.25" style="-fx-background-color: black; -fx-border-color: #ffb400;" text="Shoot" textFill="#ffb400" />
+   </children>
+</AnchorPane>

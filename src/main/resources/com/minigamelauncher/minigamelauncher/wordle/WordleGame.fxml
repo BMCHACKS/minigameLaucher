@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="720.0" maxWidth="1280.0" minHeight="720.0" minWidth="1280.0" prefHeight="720.0" prefWidth="1280.0" stylesheets="@WordleGame.css" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.minigamelauncher.wordle.WordleGameController">
+   <children>
+      <GridPane alignment="CENTER" hgap="5.0" layoutY="49.0" maxHeight="392.0" maxWidth="339.0" minHeight="297.356" minWidth="297.356" prefHeight="392.0" prefWidth="327.0" style="-fx-border-color: transparent; -fx-background-color: transparent;" styleClass="grid-cell" vgap="5.0" AnchorPane.leftAnchor="462.0" AnchorPane.rightAnchor="462.0" AnchorPane.topAnchor="49.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="60.0" minWidth="60.0" prefWidth="60.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="60.0" minWidth="60.0" prefWidth="60.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="60.0" minWidth="60.0" prefWidth="60.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="60.0" minWidth="60.0" prefWidth="60.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="60.0" minWidth="60.0" prefWidth="60.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="60.0" minHeight="60.0" prefHeight="60.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="60.0" minHeight="60.0" prefHeight="60.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="60.0" minHeight="60.0" prefHeight="60.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="60.0" minHeight="60.0" prefHeight="60.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="60.0" minHeight="60.0" prefHeight="60.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="60.0" minHeight="60.0" prefHeight="60.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label fx:id="cell_0_0" alignment="CENTER" contentDisplay="CENTER" prefHeight="60.0" prefWidth="60.0" styleClass="grid-cell" />
+            <Label fx:id="cell_0_1" alignment="CENTER" contentDisplay="CENTER" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" prefHeight="60.0" prefWidth="60.0" styleClass="grid-cell" textAlignment="CENTER" GridPane.columnIndex="1" />
+            <Label fx:id="cell_0_2" alignment="CENTER" contentDisplay="CENTER" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" prefHeight="60.0" prefWidth="60.0" styleClass="grid-cell" textAlignment="CENTER" GridPane.columnIndex="2" />
+            <Label fx:id="cell_0_3" alignment="CENTER" contentDisplay="CENTER" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" prefHeight="60.0" prefWidth="60.0" styleClass="grid-cell" textAlignment="CENTER" GridPane.columnIndex="3" />
+            <Label fx:id="cell_0_4" alignment="CENTER" contentDisplay="CENTER" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" prefHeight="60.0" prefWidth="60.0" styleClass="grid-cell" textAlignment="CENTER" GridPane.columnIndex="4" />
+            <Label fx:id="cell_1_0" alignment="CENTER" contentDisplay="CENTER" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" prefHeight="60.0" prefWidth="60.0" styleClass="grid-cell" textAlignment="CENTER" GridPane.rowIndex="1" />
+            <Label fx:id="cell_1_1" alignment="CENTER" contentDisplay="CENTER" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" prefHeight="60.0" prefWidth="60.0" styleClass="grid-cell" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label fx:id="cell_1_2" alignment="CENTER" contentDisplay="CENTER" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" prefHeight="60.0" prefWidth="60.0" styleClass="grid-cell" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Label fx:id="cell_1_3" alignment="CENTER" contentDisplay="CENTER" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" prefHeight="60.0" prefWidth="60.0" styleClass="grid-cell" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Label fx:id="cell_1_4" alignment="CENTER" contentDisplay="CENTER" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" prefHeight="60.0" prefWidth="60.0" styleClass="grid-cell" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+            <Label fx:id="cell_2_0" alignment="CENTER" contentDisplay="CENTER" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" prefHeight="60.0" prefWidth="60.0" styleClass="grid-cell" textAlignment="CENTER" GridPane.rowIndex="2" />
+            <Label fx:id="cell_2_1" alignment="CENTER" contentDisplay="CENTER" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" prefHeight="60.0" prefWidth="60.0" styleClass="grid-cell" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label fx:id="cell_2_2" alignment="CENTER" contentDisplay="CENTER" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" prefHeight="60.0" prefWidth="60.0" styleClass="grid-cell" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Label fx:id="cell_2_3" alignment="CENTER" contentDisplay="CENTER" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" prefHeight="60.0" prefWidth="60.0" styleClass="grid-cell" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Label fx:id="cell_2_4" alignment="CENTER" contentDisplay="CENTER" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" prefHeight="60.0" prefWidth="60.0" styleClass="grid-cell" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+            <Label fx:id="cell_3_0" alignment="CENTER" contentDisplay="CENTER" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" prefHeight="60.0" prefWidth="60.0" styleClass="grid-cell" textAlignment="CENTER" GridPane.rowIndex="3" />
+            <Label fx:id="cell_3_1" alignment="CENTER" contentDisplay="CENTER" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" prefHeight="60.0" prefWidth="60.0" styleClass="grid-cell" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label fx:id="cell_4_0" alignment="CENTER" contentDisplay="CENTER" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" prefHeight="60.0" prefWidth="60.0" styleClass="grid-cell" textAlignment="CENTER" GridPane.rowIndex="4" />
+            <Label fx:id="cell_4_1" alignment="CENTER" contentDisplay="CENTER" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" prefHeight="60.0" prefWidth="60.0" styleClass="grid-cell" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label fx:id="cell_3_2" alignment="CENTER" contentDisplay="CENTER" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" prefHeight="60.0" prefWidth="60.0" styleClass="grid-cell" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Label fx:id="cell_4_2" alignment="CENTER" contentDisplay="CENTER" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" prefHeight="60.0" prefWidth="60.0" styleClass="grid-cell" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <Label fx:id="cell_3_3" alignment="CENTER" contentDisplay="CENTER" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" prefHeight="60.0" prefWidth="60.0" styleClass="grid-cell" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <Label fx:id="cell_4_3" alignment="CENTER" contentDisplay="CENTER" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" prefHeight="60.0" prefWidth="60.0" styleClass="grid-cell" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <Label fx:id="cell_3_4" alignment="CENTER" contentDisplay="CENTER" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" prefHeight="60.0" prefWidth="60.0" styleClass="grid-cell" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+            <Label fx:id="cell_4_4" alignment="CENTER" contentDisplay="CENTER" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" prefHeight="60.0" prefWidth="60.0" styleClass="grid-cell" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+            <Label fx:id="cell_5_0" alignment="CENTER" contentDisplay="CENTER" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" prefHeight="60.0" prefWidth="60.0" styleClass="grid-cell" textAlignment="CENTER" GridPane.rowIndex="5" />
+            <Label fx:id="cell_5_1" alignment="CENTER" contentDisplay="CENTER" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" prefHeight="60.0" prefWidth="60.0" styleClass="grid-cell" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Label fx:id="cell_5_2" alignment="CENTER" contentDisplay="CENTER" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" prefHeight="60.0" prefWidth="60.0" styleClass="grid-cell" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <Label fx:id="cell_5_3" alignment="CENTER" contentDisplay="CENTER" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" prefHeight="60.0" prefWidth="60.0" styleClass="grid-cell" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+            <Label fx:id="cell_5_4" alignment="CENTER" contentDisplay="CENTER" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" prefHeight="60.0" prefWidth="60.0" styleClass="grid-cell" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+         </children>
+      </GridPane>
+      <Button id="exitBtn" fx:id="exitBtn" layoutX="28.0" layoutY="24.0" mnemonicParsing="false" onAction="#handleExit" prefHeight="37.0" prefWidth="115.0" styleClass="basic-btn" text="Exit" />
+      <Button id="resetBtn" fx:id="resetBtn" layoutX="1130.0" layoutY="79.0" mnemonicParsing="false" onAction="#handleReset" prefHeight="37.0" prefWidth="115.0" styleClass="basic-btn" text="Reset" />
+      <Button id="hintBtn" fx:id="hintBtn" layoutX="1130.0" layoutY="31.0" mnemonicParsing="false" onAction="#handleHint" prefHeight="37.0" prefWidth="115.0" styleClass="basic-btn" text="Hint" />
+      <VBox alignment="CENTER" layoutX="405.0" layoutY="465.0" maxWidth="500.0" minWidth="500.0" prefHeight="195.0" prefWidth="500.0" spacing="5.0" AnchorPane.leftAnchor="405.0" AnchorPane.rightAnchor="405.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="46.0" prefWidth="500.0" spacing="5.0">
+               <children>
+                  <Button fx:id="btn_Q" minHeight="43.0" mnemonicParsing="false" onAction="#handleKeyPress" prefWidth="43.0" styleClass="key-btn" text="Q" />
+                  <Button fx:id="btn_W" mnemonicParsing="false" onAction="#handleKeyPress" styleClass="key-btn" text="W" />
+                  <Button fx:id="btn_E" mnemonicParsing="false" onAction="#handleKeyPress" styleClass="key-btn" text="E" />
+                  <Button fx:id="btn_R" mnemonicParsing="false" onAction="#handleKeyPress" styleClass="key-btn" text="R" />
+                  <Button fx:id="btn_T" mnemonicParsing="false" onAction="#handleKeyPress" styleClass="key-btn" text="T" />
+                  <Button fx:id="btn_Y" mnemonicParsing="false" onAction="#handleKeyPress" styleClass="key-btn" text="Y" />
+                  <Button fx:id="btn_U" mnemonicParsing="false" onAction="#handleKeyPress" styleClass="key-btn" text="U" />
+                  <Button fx:id="btn_I" mnemonicParsing="false" onAction="#handleKeyPress" styleClass="key-btn" text="I" />
+                  <Button fx:id="btn_O" mnemonicParsing="false" onAction="#handleKeyPress" styleClass="key-btn" text="O" />
+                  <Button fx:id="btn_P" mnemonicParsing="false" onAction="#handleKeyPress" styleClass="key-btn" text="P" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="49.0" prefWidth="500.0" spacing="5.0">
+               <children>
+                  <Button fx:id="btn_A" mnemonicParsing="false" onAction="#handleKeyPress" styleClass="key-btn" text="A" />
+                  <Button fx:id="btn_S" mnemonicParsing="false" onAction="#handleKeyPress" styleClass="key-btn" text="S" />
+                  <Button fx:id="btn_D" mnemonicParsing="false" onAction="#handleKeyPress" styleClass="key-btn" text="D" />
+                  <Button fx:id="btn_F" mnemonicParsing="false" onAction="#handleKeyPress" styleClass="key-btn" text="F" />
+                  <Button fx:id="btn_G" mnemonicParsing="false" onAction="#handleKeyPress" styleClass="key-btn" text="G" />
+                  <Button fx:id="btn_H" mnemonicParsing="false" onAction="#handleKeyPress" styleClass="key-btn" text="H" />
+                  <Button fx:id="btn_J" mnemonicParsing="false" onAction="#handleKeyPress" styleClass="key-btn" text="J" />
+                  <Button fx:id="btn_K" mnemonicParsing="false" onAction="#handleKeyPress" styleClass="key-btn" text="K" />
+                  <Button fx:id="btn_L" mnemonicParsing="false" onAction="#handleKeyPress" styleClass="key-btn" text="L" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="56.0" prefWidth="500.0" spacing="5.0">
+               <children>
+                  <Button fx:id="enterBtn" mnemonicParsing="false" onAction="#handleEnter" prefHeight="56.0" prefWidth="69.0" styleClass="key-btn" text="ENTER" />
+                  <Button fx:id="btn_Z" mnemonicParsing="false" onAction="#handleKeyPress" styleClass="key-btn" text="Z" />
+                  <Button fx:id="btn_X" mnemonicParsing="false" onAction="#handleKeyPress" styleClass="key-btn" text="X" />
+                  <Button fx:id="btn_C" mnemonicParsing="false" onAction="#handleKeyPress" styleClass="key-btn" text="C" />
+                  <Button fx:id="btn_V" mnemonicParsing="false" onAction="#handleKeyPress" styleClass="key-btn" text="V" />
+                  <Button fx:id="btn_B" mnemonicParsing="false" onAction="#handleKeyPress" styleClass="key-btn" text="B" />
+                  <Button fx:id="btn_N" mnemonicParsing="false" onAction="#handleKeyPress" styleClass="key-btn" text="N" />
+                  <Button fx:id="btn_M" mnemonicParsing="false" onAction="#handleKeyPress" styleClass="key-btn" text="M" />
+                  <Button mnemonicParsing="false" onAction="#handleBackspace" prefHeight="56.0" prefWidth="69.0" styleClass="key-btn" text="⌫" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

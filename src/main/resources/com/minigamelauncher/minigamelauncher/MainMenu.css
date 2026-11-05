@@ -1,0 +1,23 @@
+.menu-btn {
+    -fx-background-color: transparent;
+    -fx-border-color: gray;
+    -fx-border-width: 3px;
+    -fx-text-fill: gray;
+    -fx-font-size: 24px;
+    -fx-pref-width: 200px;
+    -fx-pref-height: 60px;
+    -fx-cursor: hand;
+}
+
+.menu-btn:hover {
+    -fx-text-fill: #FFB300;
+	-fx-border-color: white;
+}
+
+@font-face {
+    src: url("fonts/Minecraft.ttf");
+}
+
+.menu-btn {
+    -fx-font-family: "Minecraft";
+}

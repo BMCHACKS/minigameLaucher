@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #35654d;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.minigamelauncher.uno.HelloController">
+
+    <top>
+        <VBox alignment="CENTER" prefHeight="160" spacing="10" style="-fx-padding: 10;">
+            <HBox id="botHandBox" fx:id="botHandBox" alignment="CENTER" spacing="5" />
+            <Label id="botHandLabel" fx:id="botHandLabel" style="-fx-text-fill: white; -fx-font-size: 14px; -fx-font-weight: bold;" text="Bot's Hand" />
+        </VBox>
+    </top>
+
+    <center>
+        <HBox id="centerBox" fx:id="centerBox" alignment="CENTER" spacing="40">
+            <Label id="topCardLabel" fx:id="topCardLabel" text="" />
+            <Button id="drawButton" fx:id="drawButton" onAction="#handleDrawCard" style="-fx-background-color: #222222;                            -fx-text-fill: white;                            -fx-font-size: 14px;                            -fx-font-weight: bold;                            -fx-background-radius: 10;                            -fx-padding: 10 20 10 20;" text="Draw Card" />
+        </HBox>
+    </center>
+
+    <bottom>
+        <VBox fx:id="bottomBox" alignment="CENTER" prefHeight="180" spacing="10" style="-fx-padding: 10;">
+            <HBox id="playerHandBox" fx:id="playerHandBox" alignment="CENTER" spacing="5" />
+            <Label id="statusLabel" fx:id="statusLabel" style="-fx-text-fill: white; -fx-font-size: 14px; -fx-font-weight: bold;" text="Your Turn" />
+            <Label id="playerHandLabel" fx:id="playerHandLabel" style="-fx-text-fill: white; -fx-font-size: 12px;" text="Your Hand" />
+        </VBox>
+    </bottom>
+
+</BorderPane>

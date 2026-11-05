@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.minigamelauncher.blackjack.BotMenuController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="601.0" layoutX="-1.0" pickOnBounds="true">
+         <image>
+            <Image url="@botMenu.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblName" alignment="CENTER" layoutX="241.0" layoutY="69.0" prefHeight="17.0" prefWidth="118.0" scaleX="2.0" scaleY="2.0" text="#---#" textFill="#ffb400" wrapText="true" />
+      <Label layoutX="275.0" layoutY="35.0" scaleX="2.0" scaleY="2.0" text="Welcome" textAlignment="CENTER" textFill="#ffb400" />
+      <VBox focusTraversable="true" layoutX="240.0" layoutY="134.0" prefHeight="200.0" prefWidth="120.0" style="-fx-background-color: transparent;">
+         <children>
+            <RadioButton fx:id="rbtnBaby" alignment="BOTTOM_CENTER" contentDisplay="RIGHT" mnemonicParsing="false" prefWidth="120.0" style="-fx-background-color: #1b8a34; -fx-alignment: center; -fx-font-family: arial;" text="Baby">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <toggleGroup>
+                  <ToggleGroup fx:id="group1" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="rbtnVEasy" alignment="BOTTOM_CENTER" mnemonicParsing="false" prefWidth="120.0" style="-fx-background-color: #4bb04f; -fx-alignment: center; -fx-font-family: arial;" text="Very Easy" toggleGroup="$group1">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </RadioButton>
+            <RadioButton fx:id="rbtnEasy" alignment="BOTTOM_CENTER" mnemonicParsing="false" prefWidth="120.0" style="-fx-background-color: #8bc34a; -fx-alignment: center; -fx-font-family: arial;" text="Easy" toggleGroup="$group1">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </RadioButton>
+            <RadioButton fx:id="rbtnMedium" alignment="BOTTOM_CENTER" mnemonicParsing="false" prefWidth="120.0" style="-fx-background-color: #cddc39; -fx-alignment: center; -fx-font-family: arial;" text="Medium" toggleGroup="$group1">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </RadioButton>
+            <RadioButton fx:id="rbtnHard" alignment="BOTTOM_CENTER" mnemonicParsing="false" prefWidth="120.0" style="-fx-background-color: #ffeb3b; -fx-alignment: center; -fx-font-family: arial;" text="Hard" toggleGroup="$group1">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </RadioButton>
+            <RadioButton fx:id="rbtnVHard" alignment="BOTTOM_CENTER" mnemonicParsing="false" prefWidth="120.0" style="-fx-background-color: #ff9800; -fx-alignment: center; -fx-font-family: arial;" text="Very Hard" toggleGroup="$group1">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </RadioButton>
+            <RadioButton fx:id="rbtnExtreme" alignment="BOTTOM_CENTER" mnemonicParsing="false" prefWidth="120.0" style="-fx-background-color: red; -fx-alignment: center; -fx-font-family: arial;" text="Extreme" toggleGroup="$group1">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </RadioButton>
+         </children>
+      </VBox>
+      <Button fx:id="btnNext" layoutX="461.0" layoutY="336.0" mnemonicParsing="false" onAction="#next" scaleX="1.2" scaleY="1.2" style="-fx-background-color: black; -fx-border-color: #ffb400;" text="Next" textFill="#ffb400" />
+      <Button fx:id="btnBack" layoutX="95.0" layoutY="336.0" mnemonicParsing="false" onAction="#back" scaleX="1.2" scaleY="1.2" style="-fx-background-color: black; -fx-border-color: #ffb400;" text="Back" textFill="#ffb400" />
+      <Label layoutX="241.0" layoutY="109.0" scaleX="2.0" scaleY="2.0" text="Choose Your Difficulty" textFill="#ffb400" />
+   </children>
+</Pane>
